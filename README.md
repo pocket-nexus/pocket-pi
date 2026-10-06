@@ -1,14 +1,14 @@
 # PocketPi
 
-[![CI](https://github.com/pocket-stack/pocket-pi/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/pocket-stack/pocket-pi/actions/workflows/ci.yml)
-[![Site](https://img.shields.io/github/actions/workflow/status/pocket-stack/pocket-pi/deploy-site.yml?branch=main&label=site)](https://pi.pocketlab.build)
-[![License](https://img.shields.io/github/license/pocket-stack/pocket-pi)](LICENSE)
+[![CI](https://github.com/pocket-nexus/pocket-pi/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/pocket-nexus/pocket-pi/actions/workflows/ci.yml)
+[![Site](https://img.shields.io/github/actions/workflow/status/pocket-nexus/pocket-pi/deploy-site.yml?branch=main&label=site)](https://pi.pocketlab.build)
+[![License](https://img.shields.io/github/license/pocket-nexus/pocket-pi)](LICENSE)
 
 **PocketPi is an agent-native runtime for embedded devices.**
 
 ### What it means
 
-- Powered by [PocketJS](https://github.com/pocket-stack/pocketjs), PocketPi lets developers build installable, updatable apps in JavaScript without touching the underlying firmware or hardware-specific code.
+- Powered by [PocketJS](https://github.com/pocket-nexus/pocketjs), PocketPi lets developers build installable, updatable apps in JavaScript without touching the underlying firmware or hardware-specific code.
 - The complete Pi Agent core harness runs as a resident part of the system, ready to use its tools and operate the app environment.
 - Every app treats people and agents as first-class users: people use views, agents use tools, and both act through the same actions over the same data.
 
@@ -70,7 +70,7 @@ ad hoc, and agent behavior does not bypass the app's domain logic.
   <img src="site/public/pocketpi-system-architecture.svg" width="760" alt="PocketPi system architecture from hardware and native host through PocketJS to the resident Pi Agent and ordinary apps">
 </p>
 
-[PocketJS](https://github.com/pocket-stack/pocketjs) is the JavaScript runtime
+[PocketJS](https://github.com/pocket-nexus/pocketjs) is the JavaScript runtime
 substrate: one QuickJS execution platform, a native rendering core and bounded
 host modules. PocketPi adds the resident Pi Agent, workspace, schedules, app
 lifecycle and product model above it.
@@ -96,7 +96,7 @@ Prerequisites: macOS, Rust stable and a logged-in `codex` CLI. Bun is needed
 only when regenerating the Pi Agent or view SDK assets.
 
 ```sh
-git clone https://github.com/pocket-stack/pocket-pi.git
+git clone https://github.com/pocket-nexus/pocket-pi.git
 cd pocket-pi
 
 cargo xtask run esp32-sim \
